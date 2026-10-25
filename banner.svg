@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">Shubham Kulkarni — Backend Developer &#183; Java &amp; Spring Boot &#183; DevOps</title>
+  <desc id="desc">Two animated pipelines. Payments: generate, encrypt, sign, SFTP, bank. Delivery: commit, test, build, image, deploy.</desc>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', 'Cascadia Code', Consolas, 'Liberation Mono', Menlo, monospace; }
+
+    .name { font-size: 58px; font-weight: 700; fill: #E6EDF3; letter-spacing: -0.5px; }
+    .role { font-size: 22px; font-weight: 400; fill: #C9D1D9; }
+    .role .lead { fill: #6DB33F; font-weight: 600; }
+    .role .sep { fill: #6E7681; }
+
+    .rail-label { font-size: 15px; fill: #8B949E; }
+    .rail { stroke: #30363D; stroke-width: 2; }
+    .start { fill: #0D1117; stroke: #484F58; stroke-width: 1.5; }
+    .arrow { fill: none; stroke: #484F58; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+    .chip rect { fill: #161B22; stroke: #30363D; stroke-width: 1.5; }
+    .chip text { font-size: 15px; fill: #C9D1D9; text-anchor: middle; }
+
+    /* Moving packet: hidden behind chips, visible in the gaps */
+    .dot { opacity: 0; animation: flow 6s linear infinite; }
+    .pay .dot { fill: #F89820; }
+    .dev .dot { fill: #6DB33F; animation-delay: -3s; }
+
+    @keyframes flow {
+      0%   { transform: translateX(0);     opacity: 0; }
+      4%   { opacity: 1; }
+      96%  { opacity: 1; }
+      100% { transform: translateX(826px); opacity: 0; }
+    }
+
+    /* Each stage lights up while the packet passes through it */
+    .pay .chip rect { animation: lit-amber 6s linear infinite; }
+    .dev .chip rect { animation: lit-green 6s linear infinite; }
+
+    @keyframes lit-amber {
+      0%       { stroke: #30363D; }
+      3%, 14%  { stroke: #F89820; }
+      21%,100% { stroke: #30363D; }
+    }
+    @keyframes lit-green {
+      0%       { stroke: #30363D; }
+      3%, 14%  { stroke: #6DB33F; }
+      21%,100% { stroke: #30363D; }
+    }
+
+    .pay .c1 rect { animation-delay: 0.19s; }
+    .pay .c2 rect { animation-delay: 1.38s; }
+    .pay .c3 rect { animation-delay: 2.57s; }
+    .pay .c4 rect { animation-delay: 3.76s; }
+    .pay .c5 rect { animation-delay: 4.95s; }
+
+    .dev .c1 rect { animation-delay: -2.81s; }
+    .dev .c2 rect { animation-delay: -1.62s; }
+    .dev .c3 rect { animation-delay: -0.43s; }
+    .dev .c4 rect { animation-delay: 0.76s; }
+    .dev .c5 rect { animation-delay: 1.95s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dot { display: none; }
+      .chip rect { animation: none; }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="card">
+      <rect width="1000" height="300" rx="18" />
+    </clipPath>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#1B222B" />
+    </pattern>
+    <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="880" cy="-40" r="460">
+      <stop offset="0" stop-color="#6DB33F" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#6DB33F" stop-opacity="0" />
+    </radialGradient>
+    <filter id="soft" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <g clip-path="url(#card)">
+    <rect width="1000" height="300" fill="#0D1117" />
+    <rect width="1000" height="300" fill="url(#grid)" />
+    <rect width="1000" height="300" fill="url(#glow)" />
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="298.5" rx="17.5" fill="none" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Identity -->
+  <text class="sans name" x="56" y="100">Shubham Kulkarni</text>
+  <text class="sans role" x="58" y="140"><tspan class="lead">Backend Developer</tspan><tspan class="sep"> &#183; </tspan>Java &amp; Spring Boot<tspan class="sep"> &#183; </tspan>DevOps</text>
+
+  <!-- Spring-green rule -->
+  <line x1="56" y1="166" x2="950" y2="166" stroke="#21262D" stroke-width="1" />
+  <line x1="56" y1="166" x2="132" y2="166" stroke="#6DB33F" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Pipeline 1: payments -->
+  <g class="pay">
+    <text class="mono rail-label" x="56" y="212">payments</text>
+    <line class="rail" x1="150" y1="207" x2="976" y2="207" />
+    <circle class="start" cx="150" cy="207" r="4.5" />
+    <path class="arrow" d="M326 202 L332 207 L326 212" />
+    <path class="arrow" d="M490 202 L496 207 L490 212" />
+    <path class="arrow" d="M654 202 L660 207 L654 212" />
+    <path class="arrow" d="M818 202 L824 207 L818 212" />
+    <circle class="dot" cx="150" cy="207" r="5" filter="url(#soft)" />
+    <g class="chip c1"><rect x="176" y="192" width="118" height="30" rx="15" /><text class="mono" x="235" y="212">generate</text></g>
+    <g class="chip c2"><rect x="340" y="192" width="118" height="30" rx="15" /><text class="mono" x="399" y="212">encrypt</text></g>
+    <g class="chip c3"><rect x="504" y="192" width="118" height="30" rx="15" /><text class="mono" x="563" y="212">sign</text></g>
+    <g class="chip c4"><rect x="668" y="192" width="118" height="30" rx="15" /><text class="mono" x="727" y="212">SFTP</text></g>
+    <g class="chip c5"><rect x="832" y="192" width="118" height="30" rx="15" /><text class="mono" x="891" y="212">bank</text></g>
+  </g>
+
+  <!-- Pipeline 2: delivery -->
+  <g class="dev">
+    <text class="mono rail-label" x="56" y="260">delivery</text>
+    <line class="rail" x1="150" y1="255" x2="976" y2="255" />
+    <circle class="start" cx="150" cy="255" r="4.5" />
+    <path class="arrow" d="M326 250 L332 255 L326 260" />
+    <path class="arrow" d="M490 250 L496 255 L490 260" />
+    <path class="arrow" d="M654 250 L660 255 L654 260" />
+    <path class="arrow" d="M818 250 L824 255 L818 260" />
+    <circle class="dot" cx="150" cy="255" r="5" filter="url(#soft)" />
+    <g class="chip c1"><rect x="176" y="240" width="118" height="30" rx="15" /><text class="mono" x="235" y="260">commit</text></g>
+    <g class="chip c2"><rect x="340" y="240" width="118" height="30" rx="15" /><text class="mono" x="399" y="260">test</text></g>
+    <g class="chip c3"><rect x="504" y="240" width="118" height="30" rx="15" /><text class="mono" x="563" y="260">build</text></g>
+    <g class="chip c4"><rect x="668" y="240" width="118" height="30" rx="15" /><text class="mono" x="727" y="260">image</text></g>
+    <g class="chip c5"><rect x="832" y="240" width="118" height="30" rx="15" /><text class="mono" x="891" y="260">deploy</text></g>
+  </g>
+</svg>
