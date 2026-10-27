@@ -1,0 +1,51 @@
+# Draws the GitHub stats card shown in README.md.
+# Output: stats-dark.svg and stats-light.svg on the `stats` branch.
+# If GitHub's API fails, the job stops before publishing, so the last good card stays up.
+name: Stats
+
+on:
+  schedule:
+    - cron: "47 18 * * *" # daily at 00:17 IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/stats.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide=stars,issues&hide_rank=true&custom_title=Shubham%27s%20GitHub%20Stats&title_color=6DB33F&icon_color=F89820&text_color=E6EDF3&bg_color=0D1117&border_color=30363D&border_radius=10
+          path: dist/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide=stars,issues&hide_rank=true&custom_title=Shubham%27s%20GitHub%20Stats&title_color=3D7A1E&icon_color=B45309&text_color=1F2328&bg_color=FFFFFF&border_color=D0D7DE&border_radius=10
+          path: dist/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Publish to the stats branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: stats
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
