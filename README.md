@@ -5,8 +5,8 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ShubhamK0816&label=Profile%20views&color=3D7A1E&style=flat-square" alt="Profile views" />
-  <a href="https://www.linkedin.com/in/shubham-s-kulkarni-8a5a271bb"><img src="./assets/badge-linkedin.svg" alt="Connect on LinkedIn" /></a>
-  <a href="mailto:shubhamkulkarni857@gmail.com"><img src="https:./assets/badge-email.svg" alt="Email Shubham" /></a>
+  <a href="https://www.linkedin.com/in/shubham-s-kulkarni-8a5a271bb"><img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-linkedin.svg" alt="Connect on LinkedIn" /></a>
+  <a href="mailto:shubhamkulkarni857@gmail.com"><img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-email.svg" alt="Email Shubham" /></a>
 </p>
 
 <p align="center">
@@ -42,13 +42,13 @@ engineer:
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/stack-backend-light.svg" />
-    <img src="./assets/stack-backend-dark.svg" alt="Java, Spring, Hibernate, Maven, IntelliJ IDEA, Git, GitHub" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/stack-backend-light.svg" />
+    <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/stack-backend-dark.svg" alt="Java, Spring, Hibernate, Maven, IntelliJ IDEA, Git, GitHub" />
   </picture>
   <br/>
   <picture>
-    <source media="./assets/stack-devops-light.svg" />
-    <img src="https:./assets/stack-devops-dark.svg" alt="Linux, Ubuntu, Bash, Docker, GitHub Actions, Jenkins, AWS, PostgreSQL" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/stack-devops-light.svg" />
+    <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/stack-devops-dark.svg" alt="Linux, Ubuntu, Bash, Docker, GitHub Actions, Jenkins, AWS, PostgreSQL" />
   </picture>
 </p>
 
@@ -89,22 +89,22 @@ TrainWithShubham's hands-on challenge: one task a day for 90 days, from Linux an
 ## 🛠️ Tools & Platforms
 
 <p>
-  <img src="./assets/badge-ide.svg" alt="IDE: IntelliJ IDEA" />
-  <img src="./assets/badge-db-client.svg" alt="DB client: Oracle SQL Developer" />
-  <img src="./assets/badge-build.svg" alt="Build: Maven" />
-  <img src="./assets/badge-vcs.svg" alt="VCS: Git and GitHub" />
-  <img src="./assets/badge-os.svg" alt="OS: Ubuntu and Windows" />
-  <img src="./assets/badge-registry.svg" alt="Registry: Docker Hub" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-ide.svg" alt="IDE: IntelliJ IDEA" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-db-client.svg" alt="DB client: Oracle SQL Developer" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-build.svg" alt="Build: Maven" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-vcs.svg" alt="VCS: Git and GitHub" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-os.svg" alt="OS: Ubuntu and Windows" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/badge-registry.svg" alt="Registry: Docker Hub" />
 </p>
 
 ## 🏅 Certifications
 
 <p>
-  <img src="./assets/cert-core-java.svg" alt="Certified: Core Java" />
-  <img src="./assets/cert-linux.svg" alt="Certified: Linux" />
-  <img src="./assets/cert-shell-scripting.svg" alt="Certified: Shell Scripting" />
-  <img src="./assets/cert-docker.svg" alt="Certified: Docker" />
-  <img src="./assets/cert-aws-devops.svg" alt="Certified: AWS and DevOps" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/cert-core-java.svg" alt="Certified: Core Java" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/cert-linux.svg" alt="Certified: Linux" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/cert-shell-scripting.svg" alt="Certified: Shell Scripting" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/cert-docker.svg" alt="Certified: Docker" />
+  <img src="https://raw.githubusercontent.com/ShubhamK0816/ShubhamK0816/main/assets/cert-aws-devops.svg" alt="Certified: AWS and DevOps" />
 </p>
 
 ## 🎯 Current Focus
