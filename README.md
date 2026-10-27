@@ -162,7 +162,7 @@ TrainWithShubham's hands-on challenge: one task a day for 90 days, from Linux an
 </p>
 
 <p align="center">
-  📧 <a href="mailto:shubhamkulkarni857@gmail.com">shubhamkulkarni857@gmail.com</a> &nbsp;·&nbsp; 📍 Thane, Maharashtra
+  📧 <a href="mailto:shubhamkulkarni857@gmail.com">shubhamkulkarni857@gmail.com</a> &nbsp;·&nbsp; 📍 Dombivili (Mumbai, Maharashtra), India
 </p>
 
 <p align="center"><sub><i>Two kinds of pipelines. One standard: they run on time.</i></sub></p>
