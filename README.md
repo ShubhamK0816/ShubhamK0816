@@ -1,6 +1,6 @@
 <!-- ─────────────────────── HERO ─────────────────────── -->
 <p align="center">
-  <img src="banner.svg" width="100%" alt="Shubham Kulkarni — Backend Developer · Java & Spring Boot · DevOps" />
+  <img src="assets/banner.svg" width="100%" alt="Shubham Kulkarni — Backend Developer · Java & Spring Boot · DevOps" />
 </p>
 
 <p align="center">
